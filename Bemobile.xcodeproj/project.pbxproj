@@ -1,0 +1,941 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		230386BE64CFB14C4B4DC76A /* Pods_Bemobile_BemobileUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CE59B1B38D6F49068A07BAB /* Pods_Bemobile_BemobileUITests.framework */; };
+		504E569A25B0EA24004393C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504E569925B0EA24004393C3 /* AppDelegate.swift */; };
+		504E569C25B0EA24004393C3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504E569B25B0EA24004393C3 /* SceneDelegate.swift */; };
+		504E56A325B0EA26004393C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 504E56A225B0EA26004393C3 /* Assets.xcassets */; };
+		504E56A625B0EA26004393C3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 504E56A425B0EA26004393C3 /* LaunchScreen.storyboard */; };
+		504E56B125B0EA26004393C3 /* BemobileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504E56B025B0EA26004393C3 /* BemobileTests.swift */; };
+		504E56BC25B0EA26004393C3 /* BemobileUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504E56BB25B0EA26004393C3 /* BemobileUITests.swift */; };
+		504E56D125B0EA4B004393C3 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504E56CF25B0EA4B004393C3 /* MainViewController.swift */; };
+		504E56D225B0EA4B004393C3 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 504E56D025B0EA4B004393C3 /* MainViewController.xib */; };
+		504E56DC25B0EFC1004393C3 /* loading.json in Resources */ = {isa = PBXBuildFile; fileRef = 504E56DB25B0EFC1004393C3 /* loading.json */; };
+		504E570E25B4AF60004393C3 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504E570D25B4AF60004393C3 /* NetworkManager.swift */; };
+		504E571625B4AF8D004393C3 /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504E571525B4AF8D004393C3 /* Api.swift */; };
+		504E571B25B4B224004393C3 /* Rate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504E571A25B4B224004393C3 /* Rate.swift */; };
+		504E574C25B4EB94004393C3 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504E574B25B4EB94004393C3 /* Transaction.swift */; };
+		504E575E25B4ED88004393C3 /* SimpleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504E575C25B4ED88004393C3 /* SimpleCell.swift */; };
+		504E575F25B4ED88004393C3 /* SimpleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 504E575D25B4ED88004393C3 /* SimpleCell.xib */; };
+		504E576525B4F614004393C3 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504E576325B4F614004393C3 /* DetailViewController.swift */; };
+		504E576625B4F614004393C3 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 504E576425B4F614004393C3 /* DetailViewController.xib */; };
+		504E577225B50412004393C3 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504E577125B50412004393C3 /* Extensions.swift */; };
+		504E577F25B50441004393C3 /* Detail.strings in Resources */ = {isa = PBXBuildFile; fileRef = 504E578125B50441004393C3 /* Detail.strings */; };
+		504E579D25B50654004393C3 /* Raleway-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 504E578B25B50653004393C3 /* Raleway-Regular.ttf */; };
+		504E579E25B50654004393C3 /* Raleway-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 504E578C25B50653004393C3 /* Raleway-SemiBold.ttf */; };
+		504E579F25B50654004393C3 /* Raleway-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 504E578D25B50653004393C3 /* Raleway-Italic.ttf */; };
+		504E57A025B50654004393C3 /* Raleway-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 504E578E25B50653004393C3 /* Raleway-Black.ttf */; };
+		504E57A125B50654004393C3 /* Raleway-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 504E578F25B50653004393C3 /* Raleway-MediumItalic.ttf */; };
+		504E57A225B50654004393C3 /* Raleway-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 504E579025B50653004393C3 /* Raleway-LightItalic.ttf */; };
+		504E57A325B50654004393C3 /* Raleway-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 504E579125B50653004393C3 /* Raleway-ThinItalic.ttf */; };
+		504E57A425B50654004393C3 /* Raleway-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 504E579225B50653004393C3 /* Raleway-Thin.ttf */; };
+		504E57A525B50654004393C3 /* Raleway-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 504E579325B50653004393C3 /* Raleway-ExtraLightItalic.ttf */; };
+		504E57A625B50654004393C3 /* Raleway-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 504E579425B50653004393C3 /* Raleway-ExtraLight.ttf */; };
+		504E57A725B50654004393C3 /* Raleway-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 504E579525B50653004393C3 /* Raleway-Bold.ttf */; };
+		504E57A825B50654004393C3 /* Raleway-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 504E579625B50653004393C3 /* Raleway-BoldItalic.ttf */; };
+		504E57A925B50654004393C3 /* Raleway-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 504E579725B50653004393C3 /* Raleway-ExtraBoldItalic.ttf */; };
+		504E57AA25B50654004393C3 /* Raleway-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 504E579825B50653004393C3 /* Raleway-Medium.ttf */; };
+		504E57AB25B50654004393C3 /* Raleway-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 504E579925B50653004393C3 /* Raleway-ExtraBold.ttf */; };
+		504E57AC25B50654004393C3 /* Raleway-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 504E579A25B50653004393C3 /* Raleway-Light.ttf */; };
+		504E57AD25B50654004393C3 /* Raleway-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 504E579B25B50653004393C3 /* Raleway-SemiBoldItalic.ttf */; };
+		504E57AE25B50654004393C3 /* Raleway-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 504E579C25B50653004393C3 /* Raleway-BlackItalic.ttf */; };
+		573C68F4EFC7B552D9972B47 /* Pods_BemobileTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C1873BA33F5D86994794B59 /* Pods_BemobileTests.framework */; };
+		BC4542AF0B5A7BA8BD83FB08 /* Pods_Bemobile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3A65D35BF444701EBD4FDF0 /* Pods_Bemobile.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		504E56AD25B0EA26004393C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 504E568E25B0EA24004393C3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 504E569525B0EA24004393C3;
+			remoteInfo = Bemobile;
+		};
+		504E56B825B0EA26004393C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 504E568E25B0EA24004393C3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 504E569525B0EA24004393C3;
+			remoteInfo = Bemobile;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0C1873BA33F5D86994794B59 /* Pods_BemobileTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BemobileTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F76671D5D3F1CB6959E733E /* Pods-Bemobile.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bemobile.release.xcconfig"; path = "Target Support Files/Pods-Bemobile/Pods-Bemobile.release.xcconfig"; sourceTree = "<group>"; };
+		47585D2E3E90D21C53581408 /* Pods-BemobileTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BemobileTests.release.xcconfig"; path = "Target Support Files/Pods-BemobileTests/Pods-BemobileTests.release.xcconfig"; sourceTree = "<group>"; };
+		504E569625B0EA24004393C3 /* Bemobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bemobile.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		504E569925B0EA24004393C3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		504E569B25B0EA24004393C3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		504E56A225B0EA26004393C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		504E56A525B0EA26004393C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		504E56A725B0EA26004393C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		504E56AC25B0EA26004393C3 /* BemobileTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BemobileTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		504E56B025B0EA26004393C3 /* BemobileTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BemobileTests.swift; sourceTree = "<group>"; };
+		504E56B225B0EA26004393C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		504E56B725B0EA26004393C3 /* BemobileUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BemobileUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		504E56BB25B0EA26004393C3 /* BemobileUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BemobileUITests.swift; sourceTree = "<group>"; };
+		504E56BD25B0EA26004393C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		504E56CF25B0EA4B004393C3 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		504E56D025B0EA4B004393C3 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		504E56DB25B0EFC1004393C3 /* loading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loading.json; sourceTree = "<group>"; };
+		504E570D25B4AF60004393C3 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		504E571525B4AF8D004393C3 /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
+		504E571A25B4B224004393C3 /* Rate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rate.swift; sourceTree = "<group>"; };
+		504E574B25B4EB94004393C3 /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
+		504E575C25B4ED88004393C3 /* SimpleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleCell.swift; sourceTree = "<group>"; };
+		504E575D25B4ED88004393C3 /* SimpleCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SimpleCell.xib; sourceTree = "<group>"; };
+		504E576325B4F614004393C3 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		504E576425B4F614004393C3 /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
+		504E577125B50412004393C3 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		504E578025B50441004393C3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Detail.strings; sourceTree = "<group>"; };
+		504E578525B5044F004393C3 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		504E578625B5044F004393C3 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Detail.strings; sourceTree = "<group>"; };
+		504E578B25B50653004393C3 /* Raleway-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Regular.ttf"; sourceTree = "<group>"; };
+		504E578C25B50653004393C3 /* Raleway-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-SemiBold.ttf"; sourceTree = "<group>"; };
+		504E578D25B50653004393C3 /* Raleway-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Italic.ttf"; sourceTree = "<group>"; };
+		504E578E25B50653004393C3 /* Raleway-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Black.ttf"; sourceTree = "<group>"; };
+		504E578F25B50653004393C3 /* Raleway-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-MediumItalic.ttf"; sourceTree = "<group>"; };
+		504E579025B50653004393C3 /* Raleway-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-LightItalic.ttf"; sourceTree = "<group>"; };
+		504E579125B50653004393C3 /* Raleway-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-ThinItalic.ttf"; sourceTree = "<group>"; };
+		504E579225B50653004393C3 /* Raleway-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Thin.ttf"; sourceTree = "<group>"; };
+		504E579325B50653004393C3 /* Raleway-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
+		504E579425B50653004393C3 /* Raleway-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-ExtraLight.ttf"; sourceTree = "<group>"; };
+		504E579525B50653004393C3 /* Raleway-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Bold.ttf"; sourceTree = "<group>"; };
+		504E579625B50653004393C3 /* Raleway-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-BoldItalic.ttf"; sourceTree = "<group>"; };
+		504E579725B50653004393C3 /* Raleway-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		504E579825B50653004393C3 /* Raleway-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Medium.ttf"; sourceTree = "<group>"; };
+		504E579925B50653004393C3 /* Raleway-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-ExtraBold.ttf"; sourceTree = "<group>"; };
+		504E579A25B50653004393C3 /* Raleway-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Light.ttf"; sourceTree = "<group>"; };
+		504E579B25B50653004393C3 /* Raleway-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		504E579C25B50653004393C3 /* Raleway-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-BlackItalic.ttf"; sourceTree = "<group>"; };
+		5A6D540142421DF11D6010B3 /* Pods-Bemobile-BemobileUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bemobile-BemobileUITests.release.xcconfig"; path = "Target Support Files/Pods-Bemobile-BemobileUITests/Pods-Bemobile-BemobileUITests.release.xcconfig"; sourceTree = "<group>"; };
+		5CE59B1B38D6F49068A07BAB /* Pods_Bemobile_BemobileUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bemobile_BemobileUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E2FB9A838F4E72D743569C4 /* Pods-Bemobile-BemobileUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bemobile-BemobileUITests.debug.xcconfig"; path = "Target Support Files/Pods-Bemobile-BemobileUITests/Pods-Bemobile-BemobileUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D3A65D35BF444701EBD4FDF0 /* Pods_Bemobile.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bemobile.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2F3ECF991B054F848FBD027 /* Pods-BemobileTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BemobileTests.debug.xcconfig"; path = "Target Support Files/Pods-BemobileTests/Pods-BemobileTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E7825558EEF98AF0C85B82FB /* Pods-Bemobile.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bemobile.debug.xcconfig"; path = "Target Support Files/Pods-Bemobile/Pods-Bemobile.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		504E569325B0EA24004393C3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC4542AF0B5A7BA8BD83FB08 /* Pods_Bemobile.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		504E56A925B0EA26004393C3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				573C68F4EFC7B552D9972B47 /* Pods_BemobileTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		504E56B425B0EA26004393C3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				230386BE64CFB14C4B4DC76A /* Pods_Bemobile_BemobileUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		277129B0C834385DB88D8DE4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E7825558EEF98AF0C85B82FB /* Pods-Bemobile.debug.xcconfig */,
+				2F76671D5D3F1CB6959E733E /* Pods-Bemobile.release.xcconfig */,
+				7E2FB9A838F4E72D743569C4 /* Pods-Bemobile-BemobileUITests.debug.xcconfig */,
+				5A6D540142421DF11D6010B3 /* Pods-Bemobile-BemobileUITests.release.xcconfig */,
+				E2F3ECF991B054F848FBD027 /* Pods-BemobileTests.debug.xcconfig */,
+				47585D2E3E90D21C53581408 /* Pods-BemobileTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		504E568D25B0EA24004393C3 = {
+			isa = PBXGroup;
+			children = (
+				504E569825B0EA24004393C3 /* Bemobile */,
+				504E56AF25B0EA26004393C3 /* BemobileTests */,
+				504E56BA25B0EA26004393C3 /* BemobileUITests */,
+				504E569725B0EA24004393C3 /* Products */,
+				277129B0C834385DB88D8DE4 /* Pods */,
+				A523160BECAAB04961F2F0BD /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		504E569725B0EA24004393C3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				504E569625B0EA24004393C3 /* Bemobile.app */,
+				504E56AC25B0EA26004393C3 /* BemobileTests.xctest */,
+				504E56B725B0EA26004393C3 /* BemobileUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		504E569825B0EA24004393C3 /* Bemobile */ = {
+			isa = PBXGroup;
+			children = (
+				504E569925B0EA24004393C3 /* AppDelegate.swift */,
+				504E569B25B0EA24004393C3 /* SceneDelegate.swift */,
+				504E572D25B4E836004393C3 /* Controllers */,
+				504E56FB25B44D88004393C3 /* Model */,
+				504E570C25B4AF54004393C3 /* Networking */,
+				504E56D925B0EF9F004393C3 /* Resources */,
+				504E56A425B0EA26004393C3 /* LaunchScreen.storyboard */,
+				504E56A725B0EA26004393C3 /* Info.plist */,
+			);
+			path = Bemobile;
+			sourceTree = "<group>";
+		};
+		504E56AF25B0EA26004393C3 /* BemobileTests */ = {
+			isa = PBXGroup;
+			children = (
+				504E56B025B0EA26004393C3 /* BemobileTests.swift */,
+				504E56B225B0EA26004393C3 /* Info.plist */,
+			);
+			path = BemobileTests;
+			sourceTree = "<group>";
+		};
+		504E56BA25B0EA26004393C3 /* BemobileUITests */ = {
+			isa = PBXGroup;
+			children = (
+				504E56BB25B0EA26004393C3 /* BemobileUITests.swift */,
+				504E56BD25B0EA26004393C3 /* Info.plist */,
+			);
+			path = BemobileUITests;
+			sourceTree = "<group>";
+		};
+		504E56D925B0EF9F004393C3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				504E577625B5041B004393C3 /* Strings */,
+				504E576A25B4F7BC004393C3 /* Fonts */,
+				504E56A225B0EA26004393C3 /* Assets.xcassets */,
+				504E56DA25B0EFAC004393C3 /* Animations */,
+				504E571525B4AF8D004393C3 /* Api.swift */,
+				504E577125B50412004393C3 /* Extensions.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		504E56DA25B0EFAC004393C3 /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				504E56DB25B0EFC1004393C3 /* loading.json */,
+			);
+			path = Animations;
+			sourceTree = "<group>";
+		};
+		504E56FB25B44D88004393C3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				504E571A25B4B224004393C3 /* Rate.swift */,
+				504E574B25B4EB94004393C3 /* Transaction.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		504E570C25B4AF54004393C3 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				504E570D25B4AF60004393C3 /* NetworkManager.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		504E572D25B4E836004393C3 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				504E575025B4EC28004393C3 /* Cells */,
+				504E56CF25B0EA4B004393C3 /* MainViewController.swift */,
+				504E56D025B0EA4B004393C3 /* MainViewController.xib */,
+				504E576325B4F614004393C3 /* DetailViewController.swift */,
+				504E576425B4F614004393C3 /* DetailViewController.xib */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		504E575025B4EC28004393C3 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				504E575C25B4ED88004393C3 /* SimpleCell.swift */,
+				504E575D25B4ED88004393C3 /* SimpleCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		504E576A25B4F7BC004393C3 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				504E578A25B50646004393C3 /* Raleway */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		504E577625B5041B004393C3 /* Strings */ = {
+			isa = PBXGroup;
+			children = (
+				504E578125B50441004393C3 /* Detail.strings */,
+			);
+			path = Strings;
+			sourceTree = "<group>";
+		};
+		504E578A25B50646004393C3 /* Raleway */ = {
+			isa = PBXGroup;
+			children = (
+				504E578E25B50653004393C3 /* Raleway-Black.ttf */,
+				504E579C25B50653004393C3 /* Raleway-BlackItalic.ttf */,
+				504E579525B50653004393C3 /* Raleway-Bold.ttf */,
+				504E579625B50653004393C3 /* Raleway-BoldItalic.ttf */,
+				504E579925B50653004393C3 /* Raleway-ExtraBold.ttf */,
+				504E579725B50653004393C3 /* Raleway-ExtraBoldItalic.ttf */,
+				504E579425B50653004393C3 /* Raleway-ExtraLight.ttf */,
+				504E579325B50653004393C3 /* Raleway-ExtraLightItalic.ttf */,
+				504E578D25B50653004393C3 /* Raleway-Italic.ttf */,
+				504E579A25B50653004393C3 /* Raleway-Light.ttf */,
+				504E579025B50653004393C3 /* Raleway-LightItalic.ttf */,
+				504E579825B50653004393C3 /* Raleway-Medium.ttf */,
+				504E578F25B50653004393C3 /* Raleway-MediumItalic.ttf */,
+				504E578B25B50653004393C3 /* Raleway-Regular.ttf */,
+				504E578C25B50653004393C3 /* Raleway-SemiBold.ttf */,
+				504E579B25B50653004393C3 /* Raleway-SemiBoldItalic.ttf */,
+				504E579225B50653004393C3 /* Raleway-Thin.ttf */,
+				504E579125B50653004393C3 /* Raleway-ThinItalic.ttf */,
+			);
+			path = Raleway;
+			sourceTree = "<group>";
+		};
+		A523160BECAAB04961F2F0BD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D3A65D35BF444701EBD4FDF0 /* Pods_Bemobile.framework */,
+				5CE59B1B38D6F49068A07BAB /* Pods_Bemobile_BemobileUITests.framework */,
+				0C1873BA33F5D86994794B59 /* Pods_BemobileTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		504E569525B0EA24004393C3 /* Bemobile */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 504E56C025B0EA26004393C3 /* Build configuration list for PBXNativeTarget "Bemobile" */;
+			buildPhases = (
+				1C55AF82ADCD9F2775439756 /* [CP] Check Pods Manifest.lock */,
+				504E569225B0EA24004393C3 /* Sources */,
+				504E569325B0EA24004393C3 /* Frameworks */,
+				504E569425B0EA24004393C3 /* Resources */,
+				1CF10EA7C355E6C9A3351120 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Bemobile;
+			productName = Bemobile;
+			productReference = 504E569625B0EA24004393C3 /* Bemobile.app */;
+			productType = "com.apple.product-type.application";
+		};
+		504E56AB25B0EA26004393C3 /* BemobileTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 504E56C325B0EA26004393C3 /* Build configuration list for PBXNativeTarget "BemobileTests" */;
+			buildPhases = (
+				A48A79EA28E9F369ABDA262F /* [CP] Check Pods Manifest.lock */,
+				504E56A825B0EA26004393C3 /* Sources */,
+				504E56A925B0EA26004393C3 /* Frameworks */,
+				504E56AA25B0EA26004393C3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				504E56AE25B0EA26004393C3 /* PBXTargetDependency */,
+			);
+			name = BemobileTests;
+			productName = BemobileTests;
+			productReference = 504E56AC25B0EA26004393C3 /* BemobileTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		504E56B625B0EA26004393C3 /* BemobileUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 504E56C625B0EA26004393C3 /* Build configuration list for PBXNativeTarget "BemobileUITests" */;
+			buildPhases = (
+				3CE6B9EB704282580C8B3E83 /* [CP] Check Pods Manifest.lock */,
+				504E56B325B0EA26004393C3 /* Sources */,
+				504E56B425B0EA26004393C3 /* Frameworks */,
+				504E56B525B0EA26004393C3 /* Resources */,
+				CA50CA048467AF1DED0E4665 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				504E56B925B0EA26004393C3 /* PBXTargetDependency */,
+			);
+			name = BemobileUITests;
+			productName = BemobileUITests;
+			productReference = 504E56B725B0EA26004393C3 /* BemobileUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		504E568E25B0EA24004393C3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					504E569525B0EA24004393C3 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					504E56AB25B0EA26004393C3 = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = 504E569525B0EA24004393C3;
+					};
+					504E56B625B0EA26004393C3 = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = 504E569525B0EA24004393C3;
+					};
+				};
+			};
+			buildConfigurationList = 504E569125B0EA24004393C3 /* Build configuration list for PBXProject "Bemobile" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				es,
+			);
+			mainGroup = 504E568D25B0EA24004393C3;
+			productRefGroup = 504E569725B0EA24004393C3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				504E569525B0EA24004393C3 /* Bemobile */,
+				504E56AB25B0EA26004393C3 /* BemobileTests */,
+				504E56B625B0EA26004393C3 /* BemobileUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		504E569425B0EA24004393C3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				504E57AD25B50654004393C3 /* Raleway-SemiBoldItalic.ttf in Resources */,
+				504E56A625B0EA26004393C3 /* LaunchScreen.storyboard in Resources */,
+				504E57A425B50654004393C3 /* Raleway-Thin.ttf in Resources */,
+				504E57A625B50654004393C3 /* Raleway-ExtraLight.ttf in Resources */,
+				504E577F25B50441004393C3 /* Detail.strings in Resources */,
+				504E579F25B50654004393C3 /* Raleway-Italic.ttf in Resources */,
+				504E57A225B50654004393C3 /* Raleway-LightItalic.ttf in Resources */,
+				504E57A525B50654004393C3 /* Raleway-ExtraLightItalic.ttf in Resources */,
+				504E57A825B50654004393C3 /* Raleway-BoldItalic.ttf in Resources */,
+				504E57A125B50654004393C3 /* Raleway-MediumItalic.ttf in Resources */,
+				504E57AE25B50654004393C3 /* Raleway-BlackItalic.ttf in Resources */,
+				504E576625B4F614004393C3 /* DetailViewController.xib in Resources */,
+				504E579D25B50654004393C3 /* Raleway-Regular.ttf in Resources */,
+				504E57A725B50654004393C3 /* Raleway-Bold.ttf in Resources */,
+				504E56D225B0EA4B004393C3 /* MainViewController.xib in Resources */,
+				504E57A925B50654004393C3 /* Raleway-ExtraBoldItalic.ttf in Resources */,
+				504E57AC25B50654004393C3 /* Raleway-Light.ttf in Resources */,
+				504E575F25B4ED88004393C3 /* SimpleCell.xib in Resources */,
+				504E57A025B50654004393C3 /* Raleway-Black.ttf in Resources */,
+				504E56DC25B0EFC1004393C3 /* loading.json in Resources */,
+				504E56A325B0EA26004393C3 /* Assets.xcassets in Resources */,
+				504E57AA25B50654004393C3 /* Raleway-Medium.ttf in Resources */,
+				504E57AB25B50654004393C3 /* Raleway-ExtraBold.ttf in Resources */,
+				504E579E25B50654004393C3 /* Raleway-SemiBold.ttf in Resources */,
+				504E57A325B50654004393C3 /* Raleway-ThinItalic.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		504E56AA25B0EA26004393C3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		504E56B525B0EA26004393C3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1C55AF82ADCD9F2775439756 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Bemobile-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1CF10EA7C355E6C9A3351120 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Bemobile/Pods-Bemobile-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Bemobile/Pods-Bemobile-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Bemobile/Pods-Bemobile-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3CE6B9EB704282580C8B3E83 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Bemobile-BemobileUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A48A79EA28E9F369ABDA262F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BemobileTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CA50CA048467AF1DED0E4665 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Bemobile-BemobileUITests/Pods-Bemobile-BemobileUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Bemobile-BemobileUITests/Pods-Bemobile-BemobileUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Bemobile-BemobileUITests/Pods-Bemobile-BemobileUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		504E569225B0EA24004393C3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				504E576525B4F614004393C3 /* DetailViewController.swift in Sources */,
+				504E574C25B4EB94004393C3 /* Transaction.swift in Sources */,
+				504E570E25B4AF60004393C3 /* NetworkManager.swift in Sources */,
+				504E571B25B4B224004393C3 /* Rate.swift in Sources */,
+				504E56D125B0EA4B004393C3 /* MainViewController.swift in Sources */,
+				504E577225B50412004393C3 /* Extensions.swift in Sources */,
+				504E569A25B0EA24004393C3 /* AppDelegate.swift in Sources */,
+				504E575E25B4ED88004393C3 /* SimpleCell.swift in Sources */,
+				504E571625B4AF8D004393C3 /* Api.swift in Sources */,
+				504E569C25B0EA24004393C3 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		504E56A825B0EA26004393C3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				504E56B125B0EA26004393C3 /* BemobileTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		504E56B325B0EA26004393C3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				504E56BC25B0EA26004393C3 /* BemobileUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		504E56AE25B0EA26004393C3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 504E569525B0EA24004393C3 /* Bemobile */;
+			targetProxy = 504E56AD25B0EA26004393C3 /* PBXContainerItemProxy */;
+		};
+		504E56B925B0EA26004393C3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 504E569525B0EA24004393C3 /* Bemobile */;
+			targetProxy = 504E56B825B0EA26004393C3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		504E56A425B0EA26004393C3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				504E56A525B0EA26004393C3 /* Base */,
+				504E578525B5044F004393C3 /* es */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		504E578125B50441004393C3 /* Detail.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				504E578025B50441004393C3 /* en */,
+				504E578625B5044F004393C3 /* es */,
+			);
+			name = Detail.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		504E56BE25B0EA26004393C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		504E56BF25B0EA26004393C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		504E56C125B0EA26004393C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E7825558EEF98AF0C85B82FB /* Pods-Bemobile.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Bemobile/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.albert.bemobile.Bemobile;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		504E56C225B0EA26004393C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F76671D5D3F1CB6959E733E /* Pods-Bemobile.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Bemobile/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.albert.bemobile.Bemobile;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		504E56C425B0EA26004393C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E2F3ECF991B054F848FBD027 /* Pods-BemobileTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BemobileTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.albert.bemobile.BemobileTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bemobile.app/Bemobile";
+			};
+			name = Debug;
+		};
+		504E56C525B0EA26004393C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 47585D2E3E90D21C53581408 /* Pods-BemobileTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BemobileTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.albert.bemobile.BemobileTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bemobile.app/Bemobile";
+			};
+			name = Release;
+		};
+		504E56C725B0EA26004393C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E2FB9A838F4E72D743569C4 /* Pods-Bemobile-BemobileUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BemobileUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.albert.bemobile.BemobileUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Bemobile;
+			};
+			name = Debug;
+		};
+		504E56C825B0EA26004393C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5A6D540142421DF11D6010B3 /* Pods-Bemobile-BemobileUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BemobileUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.albert.bemobile.BemobileUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Bemobile;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		504E569125B0EA24004393C3 /* Build configuration list for PBXProject "Bemobile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				504E56BE25B0EA26004393C3 /* Debug */,
+				504E56BF25B0EA26004393C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		504E56C025B0EA26004393C3 /* Build configuration list for PBXNativeTarget "Bemobile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				504E56C125B0EA26004393C3 /* Debug */,
+				504E56C225B0EA26004393C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		504E56C325B0EA26004393C3 /* Build configuration list for PBXNativeTarget "BemobileTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				504E56C425B0EA26004393C3 /* Debug */,
+				504E56C525B0EA26004393C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		504E56C625B0EA26004393C3 /* Build configuration list for PBXNativeTarget "BemobileUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				504E56C725B0EA26004393C3 /* Debug */,
+				504E56C825B0EA26004393C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 504E568E25B0EA24004393C3 /* Project object */;
+}

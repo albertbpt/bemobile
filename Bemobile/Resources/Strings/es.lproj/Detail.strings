@@ -1,0 +1,10 @@
+/* 
+  Detail.strings
+  Bemobile
+
+  Created by Albert on 18/1/21.
+  
+*/
+
+"product" = "Producto: %@";
+"total" = "Total";
